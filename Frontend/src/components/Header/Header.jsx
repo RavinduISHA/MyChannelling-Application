@@ -1,6 +1,6 @@
 import { useEffect, useRef }  from 'react';
 import UserImg from '../../assets/userimage.png'
-import Logo from '../../assets/logo01.jpg'
+import Logo from '../../assets/MediIcon.png'
 import { NavLink, Link } from 'react-router-dom'
 import {BiMenu} from 'react-icons/bi'
 
@@ -50,12 +50,12 @@ const Header = () => {
     <header className='header flex items-center'>
       <div className='container'>
         <div className='flex items-center justify-between'>
-          {/*Logo */}
+          {/*LOGO */}
           <div>
             <img src={Logo} alt='Logo' />
           </div>
 
-          {/*menu */}
+          {/*MENU */}
           <div className='navigation' ref={menuRef} onClick={toggleMenu}>
             <ul className='menu flex items-center gap-[2.7rem]'>
               {
@@ -66,7 +66,7 @@ const Header = () => {
             </ul>
           </div>
 
-          {/* nav right */}
+          {/* NAV RIGHT */}
           <div className='flex items-center gap-4'>
             <div className='hidden'>
               <Link to='/'>

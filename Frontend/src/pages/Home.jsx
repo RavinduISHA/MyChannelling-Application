@@ -1,5 +1,10 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import heroImg from '../assets/doctor-img02.png'
+import Icon from '../assets/icon01.png'
+import Icon2 from '../assets/icon02.png'
+import Icon3 from '../assets/icon03.png'
+import { BiSolidArrowToRight } from 'react-icons/bi'
+import About from '../components/About/About'
 
 const Home = () => {
   return (
@@ -51,6 +56,76 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section>
+        <div className='container'>
+          <div className='lg:w-[470px] mx-auto'>
+            <h2 className='text-[30px] leading-9 text-heading font-[800] text-center'>Providing the best medical services</h2>
+            <p className='text_para text-center'>
+              lorem ispansum sdkjn khbjf ksdjdbjofs,jsnfos
+              sfnjsnjjv vjndvoindiovn ofniosd 
+            </p>
+          </div>
+
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]'>
+            <div className='py-[30px] px-5'>
+              <div className='flex items-center justify-center'>
+                <img src={Icon} alt='Icon' />
+              </div>
+
+              <div className='mt-[30px]'>
+                <h2 className='text-[26px] leading-9 text-heading font-[700] text-center'>Find a Doctor</h2>
+                <p className='text-[16px] leading-7 text-text font-[400] mt-4 text-center'>
+                  sjhdb sdhbsd jsidoisd csducos csndisiodncsdn sodv
+                  sdvisbdvobsdbdih isdusdcusod dihjsnunsd sdnuidsn
+                </p>
+
+                <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primary hover:bg-none'>
+                  <BiSolidArrowToRight className='group-hover:text-white w-6 h-5' />
+                </Link>
+              </div>
+            </div>
+
+            <div className='py-[30px] px-5'>
+              <div className='flex items-center justify-center'>
+                <img src={Icon2} alt='Icon' />
+              </div>
+
+              <div className='mt-[30px]'>
+                <h2 className='text-[26px] leading-9 text-heading font-[700] text-center'>Find a Location</h2>
+                <p className='text-[16px] leading-7 text-text font-[400] mt-4 text-center'>
+                  sjhdb sdhbsd jsidoisd csducos csndisiodncsdn sodv
+                  sdvisbdvobsdbdih isdusdcusod dihjsnunsd sdnuidsn
+                </p>
+
+                <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primary hover:bg-none'>
+                  <BiSolidArrowToRight className='group-hover:text-white w-6 h-5' />
+                </Link>
+              </div>
+            </div>
+
+            <div className='py-[30px] px-5'>
+              <div className='flex items-center justify-center'>
+                <img src={Icon3} alt='Icon' />
+              </div>
+
+              <div className='mt-[30px]'>
+                <h2 className='text-[26px] leading-9 text-heading font-[700] text-center'>Book Appointment</h2>
+                <p className='text-[16px] leading-7 text-text font-[400] mt-4 text-center'>
+                  sjhdb sdhbsd jsidoisd csducos csndisiodncsdn sodv
+                  sdvisbdvobsdbdih isdusdcusod dihjsnunsd sdnuidsn
+                </p>
+
+                <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primary hover:bg-none'>
+                  <BiSolidArrowToRight className='group-hover:text-white w-6 h-5' />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <About />
     </>
   )
 }

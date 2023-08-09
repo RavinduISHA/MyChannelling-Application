@@ -5,6 +5,7 @@ import Icon2 from '../assets/icon02.png'
 import Icon3 from '../assets/icon03.png'
 import { BiSolidArrowToRight } from 'react-icons/bi'
 import About from '../components/About/About'
+import ServiceList from '../components/Services/ServiceList'
 
 const Home = () => {
   return (
@@ -126,6 +127,17 @@ const Home = () => {
       </section>
       
       <About />
+
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="text-[26px] leading-9 text-heading font-[700] text-center">Our Medical Services</h2>
+            <p className="text_para text-center">lorem ispasum hsdjn sdjcd ksjbd sjdncjsdnksjdc sdc,
+            World class care of everyone.</p>
+          </div>
+          <ServiceList />
+        </div>
+      </section>
     </>
   )
 }

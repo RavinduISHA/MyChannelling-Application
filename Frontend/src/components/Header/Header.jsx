@@ -30,10 +30,12 @@ const Header = () => {
 
   const handleStickHeader = () => {
     window.addEventListener('scroll', ()=>{
-      if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
-        headerRef.current.classList.add('sticky__header')
-      } else{
-        headerRef.current.classList.remove('sticky__header')
+      if(headerRef.current) {
+        if(window.scrollY > 80){
+          headerRef.current.classList.add('sticky__header');
+        } else{
+          headerRef.current.classList.remove('sticky__header');
+        }
       }
     })
   }
@@ -42,7 +44,7 @@ const Header = () => {
     handleStickHeader();
 
     return () => window.removeEventListener('scroll', handleStickHeader);
-  })
+  },[])
 
   const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
 

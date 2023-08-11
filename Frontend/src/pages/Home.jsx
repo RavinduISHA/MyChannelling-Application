@@ -9,6 +9,7 @@ import VideoIcon from '../assets/video-icon.png'
 import { BiSolidArrowToRight } from 'react-icons/bi'
 import About from '../components/About/About'
 import ServiceList from '../components/Services/ServiceList'
+import DoctorList from '../components/Doctors/DoctorList'
 
 const Home = () => {
   return (
@@ -187,6 +188,18 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/*DOCTORS */}
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="text-[26px] leading-9 text-heading font-[700] text-center">Our great Doctor</h2>
+            <p className="text_para text-center">lorem ispasum hsdjn sdjcd ksjbd sjdncjsdnksjdc sdc,
+            World class care of everyone.</p>
+          </div>
+          <DoctorList />
         </div>
       </section>
     </>

@@ -8,7 +8,7 @@ export default {
         yellow: '#FEB60D',
         purple: '#9771FF',
         iris: '#01B5C5',
-        heaidng: '#181A1E',
+        heading: '#181A1E',
         textColor: '#4E545F',
       },
       boxShadow: {

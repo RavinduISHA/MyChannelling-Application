@@ -6,10 +6,13 @@ import Icon3 from '../assets/icon03.png'
 import featureImg from '../assets/feature-img.png'
 import avatarIcon from '../assets/avatar-icon.png'
 import VideoIcon from '../assets/video-icon.png'
+import FaqImg from '../assets/feature-img.png'
 import { BiSolidArrowToRight } from 'react-icons/bi'
 import About from '../components/About/About'
 import ServiceList from '../components/Services/ServiceList'
 import DoctorList from '../components/Doctors/DoctorList'
+import FaqList from './Faq/FaqList'
+import Testimonial from '../components/Testimonial/Testimonial'
 
 const Home = () => {
   return (
@@ -61,6 +64,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* End HERO SECTION */}
 
       <section>
         <div className='container'>
@@ -136,8 +140,7 @@ const Home = () => {
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
             <h2 className="text-[26px] leading-9 text-heading font-[700] text-center">Our Medical Services</h2>
-            <p className="text_para text-center">lorem ispasum hsdjn sdjcd ksjbd sjdncjsdnksjdc sdc,
-            World class care of everyone.</p>
+            <p className="text_para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aliquid.</p>
           </div>
           <ServiceList />
         </div>
@@ -190,6 +193,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* End FEATURE*/}
 
       {/*DOCTORS */}
       <section>
@@ -202,6 +206,37 @@ const Home = () => {
           <DoctorList />
         </div>
       </section>
+      {/* End DOCTORS */}
+
+      {/* faq */}
+      <section>
+        <div className="container">
+          <div className="flex justify-between gap-[50px] lg:gap-0">
+            <div className="w-1/2 hidden md:block">
+              <img src={FaqImg} alt="" />
+            </div>
+
+            <div className="w-full md:w-1/2">
+              <h2 className='heading'>Most questions our beloved patients</h2>
+              <FaqList />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* end faq */}
+
+      {/* testonimal */}
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className='text-[26px] leading-9 text-heading font-[700] text-center'>What Our Patients Says</h2>
+            <p className="text__para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, libero.</p>
+          </div>
+         <Testimonial />
+        </div>
+      </section>
+      {/* end testonimal */}
+
     </>
   )
 }
